@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="src/css/player.css">
+</head>
+
+<body>
+  <div class="dannmaku-player">
+    <div class="player">
+      <video src="./src/video/aimer.mp4"></video> 
+      <!-- src为播放的视频链接 -->
+      <div class="menu">
+        <div class="play_btn">
+          <i class="iconfont">&#xe6a4;</i>
+        </div>
+        <div class="timeline">0:00/0:00</div>
+        <div class="dm-type">
+          <div class="dm-type-display">canvas</div>
+          <ul class="dm-type-list">
+            <li>css</li>
+            <li>canvas</li>
+            <li>close</li>
+          </ul>
+        </div>
+        <div class="speed">
+          <div class = "speed-display">x1.0</div>
+          <ul class="speed-list">
+            <li>x0.5</li>
+            <li>x1</li>
+            <li>x1.5</li>
+            <li>x2.0</li>
+          </ul>
+        </div>
+        <div class="process-bar">
+          <div class="processing"></div>
+          <div class="points"></div>
+        </div>
+        <div class="vol">
+          <i class="iconfont">&#xe7ba;</i>
+          <div class="vol-bar">
+            <div class="vol-process-bar">
+              <div class="processing"></div>
+              <div class="points"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="fullscreen">
+          <i class="iconfont">&#xe60a;</i>
+        </div> -->
+      </div>
+      <!-- <canvas id="DannmakuArea" width="800" height="500" style="position: absolute;left:0%;top:0%"></canvas> -->
+    </div>
+    <div class="dannmaku">
+      <div class="dannmaku-menus">
+        <input type="text"" class=" dannmaku-input">
+        <button class="dannmaku-input-btn">发射</button>
+      </div>
+
+      <div class="dannmaku-list">
+        <table border="0" cellspacing="0" cellpadding="0">
+          <thead>
+            <tr class="dannmaku-list-title">
+              <th>时间</th>
+              <th>弹幕内容</th>
+            </tr>
+          </thead>
+          <tbody class="dannmaku-list-value">
+            <!-- <tr>
+            <td>111</td>
+            <td>222</td>
+          </tr> -->
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  <script src="./src/js/axios.js"></script>
+  <script src="/src/js/index.js" type="module"></script>
+</body>
+
+</html>
